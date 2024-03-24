@@ -1,0 +1,2 @@
+verilog work "bin2BCD.v"
+verilog work "displaymux.v"

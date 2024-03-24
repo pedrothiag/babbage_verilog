@@ -1,0 +1,6 @@
+ISim log file
+Running: C:\Users\souza\Desktop\babbage\babbage\babbage_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/souza/Desktop/babbage/babbage/babbage_tb_isim_beh.wdb 
+Time resolution is 1 fs
+# onerror resume
+# wave add /
+No active Database

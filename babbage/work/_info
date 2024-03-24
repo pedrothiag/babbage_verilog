@@ -1,0 +1,150 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/souza/Desktop/babbage/babbage
+T_opt
+!s110 1711215852
+V]eQGlVDC0h9FmonZ>`_Qe3
+Z1 04 10 4 work babbage_tb fast 0
+Z2 04 4 4 work glbl fast 0
+=1-b07b250d014c-65ff14ec-24-40bc
+Z3 o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip +acc
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;10.6d;65
+R0
+T_opt1
+!s110 1711215669
+VM`EFX1JzPVH`@k^0zi>a?0
+R1
+R2
+=1-b07b250d014c-65ff1435-276-2da4
+R3
+R4
+n@_opt1
+R5
+R0
+T_opt2
+!s110 1711222969
+VN@Ab8:970<^A<3@F;@k;X3
+04 10 4 work bin2BCD_tb fast 0
+R2
+=1-b07b250d014c-65ff30b9-107-1154
+R3
+R4
+n@_opt2
+R5
+R0
+vbabbage
+Z6 !s110 1711294677
+!i10b 1
+!s100 YVCMHH5ib3Q5;ST1n6zR72
+IFB_@Z1k;>77=abFihjk<P2
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1711215723
+8babbage.v
+Fbabbage.v
+Z8 L0 21
+Z9 OL;L;10.6d;65
+r1
+!s85 0
+31
+Z10 !s108 1711294677.000000
+!s107 babbage.v|
+!s90 -reportprogress|300|babbage.v|
+!i113 0
+Z11 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+vbabbage_tb
+R6
+!i10b 1
+!s100 8>=?RlWiOVJMnilk]bVmH3
+IYjTBiRDnhb>^2]O4Y8zH<3
+R7
+R0
+w1711215842
+8babbage_tb.v
+Fbabbage_tb.v
+Z12 L0 25
+R9
+r1
+!s85 0
+31
+R10
+!s107 babbage_tb.v|
+!s90 -reportprogress|300|babbage_tb.v|
+!i113 0
+R11
+R4
+vbin2BCD
+Z13 !s110 1711222968
+!i10b 1
+!s100 m4<0Z3]kzPg4[<ASePg5D1
+Ia@=B9L6mmBe3]bUdemM[?0
+R7
+R0
+w1711222866
+8bin2BCD.v
+Fbin2BCD.v
+R8
+R9
+r1
+!s85 0
+31
+Z14 !s108 1711222968.000000
+!s107 bin2BCD.v|
+!s90 -reportprogress|300|bin2BCD.v|
+!i113 0
+R11
+R4
+nbin2@b@c@d
+vbin2BCD_tb
+R13
+!i10b 1
+!s100 14j]Y[8Z3L32z6HL:@Kjh1
+IhoEeJIS=86WhgEBhF]RI61
+R7
+R0
+w1711222954
+8bin2BCD_tb.v
+Fbin2BCD_tb.v
+R12
+R9
+r1
+!s85 0
+31
+R14
+!s107 bin2BCD_tb.v|
+!s90 -reportprogress|300|bin2BCD_tb.v|
+!i113 0
+R11
+R4
+nbin2@b@c@d_tb
+vglbl
+R6
+!i10b 1
+!s100 UlJ]9LUWO:ZWoRO62F9fW3
+INz3046GECC=X7FgQ2]FR>3
+R7
+R0
+w1381681120
+8C:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+FC:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+L0 5
+R9
+r1
+!s85 0
+31
+R10
+!s107 C:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!s90 -reportprogress|300|C:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!i113 0
+R11
+R4

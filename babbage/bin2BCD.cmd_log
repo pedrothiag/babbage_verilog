@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/Users/souza/Desktop/babbage/babbage/bin2BCD.xst" -ofn "C:/Users/souza/Desktop/babbage/babbage/bin2BCD.syr" 
+xst -intstyle ise -ifn "C:/Users/souza/Desktop/babbage/babbage/bin2BCD.xst" -ofn "C:/Users/souza/Desktop/babbage/babbage/bin2BCD.syr" 
+xst -intstyle ise -ifn "C:/Users/souza/Desktop/babbage/babbage/bin2BCD.xst" -ofn "C:/Users/souza/Desktop/babbage/babbage/bin2BCD.syr" 
+xst -intstyle ise -ifn "C:/Users/souza/Desktop/babbage/babbage/bin2BCD.xst" -ofn "C:/Users/souza/Desktop/babbage/babbage/bin2BCD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-csg324-2 bin2BCD.ngc bin2BCD.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o bin2BCD_map.ncd bin2BCD.ngd bin2BCD.pcf 
+par -w -intstyle ise -ol high -mt off bin2BCD_map.ncd bin2BCD.ncd bin2BCD.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml bin2BCD.twx bin2BCD.ncd -o bin2BCD.twr bin2BCD.pcf 

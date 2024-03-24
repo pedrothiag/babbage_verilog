@@ -1,0 +1,141 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+-n 3 -fastpaths -xml bin2BCD.twx bin2BCD.ncd -o bin2BCD.twr bin2BCD.pcf
+
+Design file:              bin2BCD.ncd
+Physical constraint file: bin2BCD.pcf
+Device,package,speed:     xc6slx9,csg324,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+bin<0>         |und<0>         |    8.001|
+bin<1>         |dez<0>         |    8.160|
+bin<1>         |und<1>         |    8.597|
+bin<1>         |und<2>         |    8.424|
+bin<1>         |und<3>         |    8.798|
+bin<2>         |cen<0>         |    9.202|
+bin<2>         |dez<0>         |    9.381|
+bin<2>         |dez<1>         |    9.803|
+bin<2>         |dez<2>         |    9.985|
+bin<2>         |dez<3>         |   10.324|
+bin<2>         |und<1>         |    9.867|
+bin<2>         |und<2>         |   10.101|
+bin<2>         |und<3>         |    9.679|
+bin<3>         |cen<0>         |   11.033|
+bin<3>         |cen<1>         |    9.804|
+bin<3>         |cen<2>         |   10.195|
+bin<3>         |cen<3>         |   10.361|
+bin<3>         |dez<0>         |   10.295|
+bin<3>         |dez<1>         |   10.513|
+bin<3>         |dez<2>         |   11.533|
+bin<3>         |dez<3>         |   11.034|
+bin<3>         |und<1>         |   10.870|
+bin<3>         |und<2>         |   11.015|
+bin<3>         |und<3>         |   10.822|
+bin<4>         |cen<0>         |   13.107|
+bin<4>         |cen<1>         |   11.834|
+bin<4>         |cen<2>         |   12.225|
+bin<4>         |cen<3>         |   12.391|
+bin<4>         |dez<0>         |   11.421|
+bin<4>         |dez<1>         |   12.493|
+bin<4>         |dez<2>         |   13.607|
+bin<4>         |dez<3>         |   12.967|
+bin<4>         |und<1>         |   11.907|
+bin<4>         |und<2>         |   12.141|
+bin<4>         |und<3>         |   11.719|
+bin<5>         |cen<0>         |   14.301|
+bin<5>         |cen<1>         |   13.028|
+bin<5>         |cen<2>         |   13.419|
+bin<5>         |cen<3>         |   13.585|
+bin<5>         |dez<0>         |   12.741|
+bin<5>         |dez<1>         |   13.687|
+bin<5>         |dez<2>         |   14.801|
+bin<5>         |dez<3>         |   14.161|
+bin<5>         |und<1>         |   13.227|
+bin<5>         |und<2>         |   13.461|
+bin<5>         |und<3>         |   13.039|
+bin<6>         |cen<0>         |   14.186|
+bin<6>         |cen<1>         |   12.913|
+bin<6>         |cen<2>         |   13.304|
+bin<6>         |cen<3>         |   13.470|
+bin<6>         |dez<0>         |   12.626|
+bin<6>         |dez<1>         |   13.572|
+bin<6>         |dez<2>         |   14.686|
+bin<6>         |dez<3>         |   14.046|
+bin<6>         |und<1>         |   13.112|
+bin<6>         |und<2>         |   13.346|
+bin<6>         |und<3>         |   12.924|
+bin<7>         |cen<0>         |   14.073|
+bin<7>         |cen<1>         |   12.800|
+bin<7>         |cen<2>         |   13.191|
+bin<7>         |cen<3>         |   13.357|
+bin<7>         |dez<0>         |   12.410|
+bin<7>         |dez<1>         |   13.459|
+bin<7>         |dez<2>         |   14.573|
+bin<7>         |dez<3>         |   13.933|
+bin<7>         |und<1>         |   12.896|
+bin<7>         |und<2>         |   13.130|
+bin<7>         |und<3>         |   12.708|
+bin<8>         |cen<0>         |   14.186|
+bin<8>         |cen<1>         |   12.913|
+bin<8>         |cen<2>         |   13.304|
+bin<8>         |cen<3>         |   13.470|
+bin<8>         |dez<0>         |   12.626|
+bin<8>         |dez<1>         |   13.572|
+bin<8>         |dez<2>         |   14.686|
+bin<8>         |dez<3>         |   14.046|
+bin<8>         |und<1>         |   13.112|
+bin<8>         |und<2>         |   13.346|
+bin<8>         |und<3>         |   12.924|
+bin<9>         |cen<0>         |   14.102|
+bin<9>         |cen<1>         |   12.829|
+bin<9>         |cen<2>         |   13.220|
+bin<9>         |cen<3>         |   13.386|
+bin<9>         |dez<0>         |   12.508|
+bin<9>         |dez<1>         |   13.488|
+bin<9>         |dez<2>         |   14.602|
+bin<9>         |dez<3>         |   13.962|
+bin<9>         |und<1>         |   12.994|
+bin<9>         |und<2>         |   13.228|
+bin<9>         |und<3>         |   12.806|
+---------------+---------------+---------+
+
+
+Analysis completed Sat Mar 23 17:32:43 2024 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4585 MB
+
+
+
