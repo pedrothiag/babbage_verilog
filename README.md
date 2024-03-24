@@ -107,7 +107,7 @@ $$
 g(n) = 6 + g(n-1)
 $$
 
-Isso é particulamente verdadeiro para $n > 2$ (lembrando que o primeiro valor de $g(n)$ é calculado em $n=2$). Para $n = 21$, o valor de $g(n)$ é dado por $g(2) = 6(2) - 2 = 10$. Ou seja:
+Isso é particulamente verdadeiro para $n > 2$ (lembrando que o primeiro valor de $g(n)$ é calculado em $n=2$). Para $n = 2$, o valor de $g(n)$ é dado por $g(2) = 6(2) - 2 = 10$. Ou seja:
 
 $$
 g(n) = \begin{cases}
