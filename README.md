@@ -45,21 +45,27 @@ Todavia, a equação apresentada acima ainda contém termos de segunda ordem. Is
 
 $$
 h(n) = \begin{cases}
-    1, n = 0 \\
-    h(n-1) + f(n), n > 0
+    1, & n = 0 \\
+    h(n-1) + f(n), & n > 0
 \end{cases}
 $$
 
 O procedimento é repetido para o novo polinômio $f(n)$, ou seja, tomando-se $f(n-1)$:
 
 $$
-f(n-1) = 3(n-1)^2 + (n-1) + 1 = 3n^2 - 5n + 3
+\begin{split}
+f(n-1) & = 3(n-1)^2 + (n-1) + 1\\
+       & = 3n^2 - 5n + 3
+\end{split}
 $$
 
 Desta forma,
 
 $$
-f(n) - f(n-1) = 3n^2 + n + 1 - (3n^2 - 5n + 3) = 6n - 2
+\begin{split}
+f(n) - f(n-1) & = 3n^2 + n + 1 - (3n^2 - 5n + 3)\\
+              & = 6n - 2
+\end{split}
 $$
 
 ou seja,
@@ -72,21 +78,27 @@ Isso é particulamente verdadeiro para $n > 1$ (lembrando que o primeiro valor d
 
 $$
 f(n) = \begin{cases}
-    5, n = 1 \\
-    f(n-1) + 6n - 2, n > 1
+    5, & n = 1 \\
+    f(n-1) + 6n - 2, & n > 1
 \end{cases}
 $$
 
 Por fim, denominado $g(n) = 6n - 2$ temos que:
 
 $$
-g(n-1) = 6(n-1) - 2 = 6n - 8
+\begin{split}
+g(n-1) & = 6(n-1) - 2\\
+       & = 6n - 8
+\end{split}
 $$
 
 ou seja,
 
 $$
-g(n) - g(n-1) = 6n - 2 - (6n - 8) = 6
+\begin{split}
+g(n) - g(n-1) & = 6n - 2 - (6n - 8)\\
+              & = 6
+\end{split}
 $$
 
 Assim sendo,
@@ -99,8 +111,8 @@ Isso é particulamente verdadeiro para $n > 2$ (lembrando que o primeiro valor d
 
 $$
 g(n) = \begin{cases}
-    10, n = 2 \\
-    6 + g(n-1), n > 2
+    10, & n = 2 \\
+    6 + g(n-1), & n > 2
 \end{cases}
 $$
 
@@ -108,20 +120,20 @@ Desta forma, o polinômio $h(n) = n^3 + 2n^2 + 2n + 1$ pode ter seus valores tab
 
 $$
 h(n) = \begin{cases}
-    1, n = 0 \\
-    h(n-1) + f(n), n > 0
+    1, & n = 0 \\
+    h(n-1) + f(n), & n > 0
 \end{cases}
 $$
 $$
 f(n) = \begin{cases}
-    5, n = 1 \\
-    f(n-1) + 6n - 2, n > 1
+    5, & n = 1 \\
+    f(n-1) + 6n - 2, & n > 1
 \end{cases}
 $$
 $$
 g(n) = \begin{cases}
-    10, n = 2 \\
-    6 + g(n-1), n > 2
+    10, & n = 2 \\
+    6 + g(n-1), & n > 2
 \end{cases}
 $$
 
