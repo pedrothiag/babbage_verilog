@@ -20,7 +20,10 @@ $$
 Desta forma podemos encontrar a primeira diferença em relação à $h(n)$:
 
 $$
-h(n) - h(n-1) = n^3 + 2n^2 + 2n + 1 - (n^3 - n^2 + n) = 3n^2 + n + 1
+\begin{split}
+h(n) - h(n-1) & = n^3 + 2n^2 + 2n + 1 - (n^3 - n^2 + n) \\
+              & = 3n^2 + n + 1
+\end{split}
 $$
 
 ou seja,
@@ -33,8 +36,8 @@ Isso é particulamente verdadeiro para $n > 0$. Para $n = 0$, o valor de $h(n)$ 
 
 $$
 h(n) = \begin{cases}
-    1, n = 0 \\
-    h(n-1) + 3n^2 + n + 1, n > 0
+    1, & n = 0 \\
+    h(n-1) + 3n^2 + n + 1, & n > 0
 \end{cases}
 $$
 
