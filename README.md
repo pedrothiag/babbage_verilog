@@ -124,12 +124,14 @@ h(n) = \begin{cases}
     h(n-1) + f(n), & n > 0
 \end{cases}
 $$
+
 $$
 f(n) = \begin{cases}
     5, & n = 1 \\
     f(n-1) + 6n - 2, & n > 1
 \end{cases}
 $$
+
 $$
 g(n) = \begin{cases}
     10, & n = 2 \\
