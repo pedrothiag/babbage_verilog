@@ -11,7 +11,10 @@ $$
 O primeiro passo é tomar o valor de $h(n-1)$:
 
 $$
-h(n-1) = (n-1)^3 + 2(n-1)^2 + 2(n-1) + 1 = n^3 - n^2 + n
+\begin{split}
+h(n-1) & = (n-1)^3 + 2(n-1)^2 + 2(n-1) + 1\\
+       & = n^3 - n^2 + n
+\end{split}
 $$
 
 Desta forma podemos encontrar a primeira diferença em relação à $h(n)$:
