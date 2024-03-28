@@ -153,3 +153,7 @@ g(n) = \begin{cases}
 $$
 
 Ou seja, um polinômio de terceiro grau tem seus valores tabulados sem a necessidade de nenhuma operação que não seja somas!
+
+## Máquina Diferencial de Babbage em Verilog
+
+Para implementar a máquina diferencial de Babbage em Verilog, resolvi especificar o funcionamento em termos da máquina de estados apresentada na Figura abaixo. 

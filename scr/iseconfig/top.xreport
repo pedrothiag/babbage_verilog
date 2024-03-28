@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2024-03-27T23:12:43</DateModified>
+  <DateModified>2024-03-28T17:36:19</DateModified>
   <ModuleName>top</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>D:/Projetos/Verilog/MimasV2/Babbage/scr/iseconfig/top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/Projetos/Verilog/MimasV2/Babbage/scr</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/Projetos/Verilog/MimasV2/Babbage/scr\</ImplementationReportsDirectory>
   <DateInitialized>2024-03-27T23:12:43</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

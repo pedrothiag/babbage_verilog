@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-04VK81S::  Wed Mar 27 23:22:33 2024
+DESKTOP-04VK81S::  Thu Mar 28 17:38:12 2024
 
 par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
 
@@ -95,9 +95,9 @@ Starting Router
 
 Phase  1  : 476 unrouted;      REAL time: 1 secs 
 
-Phase  2  : 403 unrouted;      REAL time: 1 secs 
+Phase  2  : 403 unrouted;      REAL time: 2 secs 
 
-Phase  3  : 168 unrouted;      REAL time: 1 secs 
+Phase  3  : 168 unrouted;      REAL time: 2 secs 
 
 Phase  4  : 168 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 2 secs 
 

@@ -80,15 +80,6 @@ module babbage (clk, rst, start, nextn, outdata);
 					h = 10'd1;
 					f = 10'd5;
 					g = 10'd10;
-					state = calculo;
-				end
-				
-				//Calculo
-				calculo: begin
-					h = h + f;
-					f = f + g;
-					g = g + 10'd6;
-					n = n + 5'd1;
 					state = waitnext;
 				end
 				
@@ -102,6 +93,15 @@ module babbage (clk, rst, start, nextn, outdata);
 				waitnext_sync: begin
 					if(nextn == 1'b0) state = waitnext_sync;
 					else state = calculo;
+				end
+				
+				//Calculo
+				calculo: begin
+					h = h + f;
+					f = f + g;
+					g = g + 10'd6;
+					n = n + 5'd1;
+					state = waitnext;
 				end
 				
 				//Default
