@@ -160,6 +160,8 @@ Para implementar a máquina diferencial de Babbage em Verilog, resolvi especific
 
 ![image](https://github.com/pedrothiag/babbage_verilog/assets/5923790/41dd856a-191a-4aaa-a7f4-9b775d20c472)
 
+Os arquivos do projeto estão na pasta `scr`. Utilizei o ISE 14.7 para a descrição do hwardware. Como FPGA, utilizei a Mimas V2, que possui uma FPGA Spartan 6. O vídeo de funcionamento do projeto pode ser acessado aqui: https://youtu.be/BLdNFPG5yJo
+
 Os estágios `Espera_Sync` e `Wait_Next_Sync` são estados de sincronismo. O projeto da máquina de estados foi feito levando em consideração que na placa FPGA Mimas v2 os botões estão ligados em pull-up, e desta forma, quando pressionados, apresentam nível lógico BAIXO.
 
 ## Funcionamento
