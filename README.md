@@ -17,7 +17,7 @@ h(n-1) & = (n-1)^3 + 2(n-1)^2 + 2(n-1) + 1\\
 \end{split}
 $$
 
-Desta forma podemos encontrar a primeira diferença em relação à $h(n)$:
+Desta forma podemos encontrar a primeira diferença regressiva em relação à $h(n)$:
 
 $$
 \begin{split}
@@ -41,7 +41,7 @@ h(n) = \begin{cases}
 \end{cases}
 $$
 
-Todavia, a equação apresentada acima ainda contém termos de segunda ordem. Isso pode ser resolvido denominado $f(n) = 3n^2 + n + 1$:
+Todavia, a equação apresentada acima ainda contém termos de segunda ordem. Isso pode ser resolvido denominado $f(n) = 3n^2 + n + 1$. Desta forma,
 
 $$
 h(n) = \begin{cases}
@@ -86,6 +86,15 @@ $$
 Por fim, denominado $g(n) = 6n - 2$ temos que:
 
 $$
+f(n) = \begin{cases}
+    5, & n = 1 \\
+    f(n-1) + g(n), & n > 1
+\end{cases}
+$$
+
+Podemos realizar o mesmo procedimento para $g(n)$:
+
+$$
 \begin{split}
 g(n-1) & = 6(n-1) - 2\\
        & = 6n - 8
@@ -128,7 +137,7 @@ $$
 $$
 f(n) = \begin{cases}
     5, & n = 1 \\
-    f(n-1) + 6n - 2, & n > 1
+    f(n-1) + g(n), & n > 1
 \end{cases}
 $$
 
