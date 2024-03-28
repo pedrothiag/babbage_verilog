@@ -2,6 +2,10 @@
 
 Esse projeto corresponde à um emulador de uma máquina diferencial de Babbage. A máquina diferencial de Babbage tem como objetivo de tabular valores em uma equação polinominal utilizando equações de diferença. Desta forma, o hardware digital não deve se preocupar em realizar operações complexas de multiplicação, apenas soma e subtrações, o que simplifica o nosso circuito.
 
+![image](https://github.com/pedrothiag/babbage_verilog/assets/5923790/9d2e6307-1228-4345-8667-4fd457798196)
+
+## Como Funciona a Máquina Diferencial de Babbage?
+
 Considere que desejamos tabular os valores do seguintes polinômio $h(n)$ dado por:
 
 $$
