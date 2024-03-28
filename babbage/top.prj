@@ -1,4 +1,0 @@
-verilog work "bin2BCD.v"
-verilog work "displaymux.v"
-verilog work "babbage.v"
-verilog work "top.v"

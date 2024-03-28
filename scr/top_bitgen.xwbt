@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Projetos\Verilog\MimasV2\Babbage\scr\top.ncd
+OUTFILE=D:\Projetos\Verilog\MimasV2\Babbage\scr\top.bit
+FAMILY=Spartan6
+PART=xc6slx9-2csg324
+WORKINGDIR=D:\Projetos\Verilog\MimasV2\Babbage\scr
+LICENSE=WebPack
+USER_INFO=211788440_0_0_115

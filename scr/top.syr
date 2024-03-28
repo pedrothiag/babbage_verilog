@@ -1,0 +1,672 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-csg324
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\Projetos\Verilog\MimasV2\Babbage\scr\StateMachine.v" into library work
+Parsing module <StateMachine>.
+Analyzing Verilog file "D:\Projetos\Verilog\MimasV2\Babbage\scr\Mux4x1.v" into library work
+Parsing module <Mux4x1>.
+Analyzing Verilog file "D:\Projetos\Verilog\MimasV2\Babbage\scr\CombSel.v" into library work
+Parsing module <CombSel>.
+Analyzing Verilog file "D:\Projetos\Verilog\MimasV2\Babbage\scr\clkdivider.v" into library work
+Parsing module <clkdivider>.
+Analyzing Verilog file "D:\Projetos\Verilog\MimasV2\Babbage\scr\bin2BCD.v" into library work
+Parsing module <bin2BCD>.
+Analyzing Verilog file "D:\Projetos\Verilog\MimasV2\Babbage\scr\BCD2Hex.v" into library work
+Parsing module <BCD2Hex>.
+Analyzing Verilog file "D:\Projetos\Verilog\MimasV2\Babbage\scr\babbage.v" into library work
+Parsing module <babbage>.
+Analyzing Verilog file "D:\Projetos\Verilog\MimasV2\Babbage\scr\top.v" into library work
+Parsing module <top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <top>.
+
+Elaborating module <bin2BCD>.
+
+Elaborating module <Mux4x1>.
+
+Elaborating module <BCD2Hex>.
+
+Elaborating module <StateMachine>.
+
+Elaborating module <CombSel>.
+
+Elaborating module <clkdivider>.
+
+Elaborating module <babbage>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top>.
+    Related source file is "D:\Projetos\Verilog\MimasV2\Babbage\scr\top.v".
+    Summary:
+	no macro.
+Unit <top> synthesized.
+
+Synthesizing Unit <bin2BCD>.
+    Related source file is "D:\Projetos\Verilog\MimasV2\Babbage\scr\bin2BCD.v".
+    Found 4-bit adder for signal <n0075> created at line 38.
+    Found 4-bit adder for signal <GND_2_o_GND_2_o_add_4_OUT> created at line 38.
+    Found 4-bit adder for signal <GND_2_o_GND_2_o_add_7_OUT> created at line 38.
+    Found 4-bit adder for signal <n0085> created at line 37.
+    Found 4-bit adder for signal <GND_2_o_GND_2_o_add_13_OUT> created at line 38.
+    Found 4-bit adder for signal <GND_2_o_GND_2_o_add_16_OUT> created at line 37.
+    Found 4-bit adder for signal <GND_2_o_GND_2_o_add_19_OUT> created at line 38.
+    Found 4-bit adder for signal <GND_2_o_GND_2_o_add_22_OUT> created at line 37.
+    Found 4-bit adder for signal <GND_2_o_GND_2_o_add_25_OUT> created at line 38.
+    Found 4-bit adder for signal <n0104> created at line 36.
+    Found 4-bit adder for signal <GND_2_o_GND_2_o_add_31_OUT> created at line 37.
+    Found 4-bit adder for signal <GND_2_o_GND_2_o_add_34_OUT> created at line 38.
+    Found 3-bit comparator lessequal for signal <n0000> created at line 38
+    Found 4-bit comparator lessequal for signal <n0004> created at line 38
+    Found 4-bit comparator lessequal for signal <n0008> created at line 38
+    Found 3-bit comparator lessequal for signal <n0012> created at line 37
+    Found 4-bit comparator lessequal for signal <n0016> created at line 38
+    Found 4-bit comparator lessequal for signal <n0020> created at line 37
+    Found 4-bit comparator lessequal for signal <n0024> created at line 38
+    Found 4-bit comparator lessequal for signal <n0028> created at line 37
+    Found 4-bit comparator lessequal for signal <n0032> created at line 38
+    Found 3-bit comparator lessequal for signal <n0036> created at line 36
+    Found 4-bit comparator lessequal for signal <n0040> created at line 37
+    Found 4-bit comparator lessequal for signal <n0044> created at line 38
+    Summary:
+	inferred  12 Adder/Subtractor(s).
+	inferred  12 Comparator(s).
+	inferred  12 Multiplexer(s).
+Unit <bin2BCD> synthesized.
+
+Synthesizing Unit <Mux4x1>.
+    Related source file is "D:\Projetos\Verilog\MimasV2\Babbage\scr\Mux4x1.v".
+    Found 4-bit 4-to-1 multiplexer for signal <x> created at line 31.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux4x1> synthesized.
+
+Synthesizing Unit <BCD2Hex>.
+    Related source file is "D:\Projetos\Verilog\MimasV2\Babbage\scr\BCD2Hex.v".
+    Found 16x7-bit Read Only RAM for signal <hex>
+    Summary:
+	inferred   1 RAM(s).
+Unit <BCD2Hex> synthesized.
+
+Synthesizing Unit <StateMachine>.
+    Related source file is "D:\Projetos\Verilog\MimasV2\Babbage\scr\StateMachine.v".
+        s0 = 0
+        s1 = 1
+        s2 = 2
+    Found 3-bit register for signal <dsel>.
+    Found 2-bit register for signal <state>.
+    Found 4x5-bit Read Only RAM for signal <_n0012>
+    HDL ADVISOR - Describing an operational reset or an explicit power-up state for register <state> would allow inference of a finite state machine and as consequence better performance and smaller area.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   5 D-type flip-flop(s).
+Unit <StateMachine> synthesized.
+
+Synthesizing Unit <CombSel>.
+    Related source file is "D:\Projetos\Verilog\MimasV2\Babbage\scr\CombSel.v".
+    Summary:
+	no macro.
+Unit <CombSel> synthesized.
+
+Synthesizing Unit <clkdivider>.
+    Related source file is "D:\Projetos\Verilog\MimasV2\Babbage\scr\clkdivider.v".
+    Found 32-bit register for signal <status>.
+    Found 32-bit adder for signal <status[31]_GND_7_o_add_1_OUT> created at line 31.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+Unit <clkdivider> synthesized.
+
+Synthesizing Unit <babbage>.
+    Related source file is "D:\Projetos\Verilog\MimasV2\Babbage\scr\babbage.v".
+        inicio = 0
+        espera = 1
+        espera_sync = 2
+        setar = 3
+        calculo = 4
+        waitnext = 5
+        waitnext_sync = 6
+    Found 10-bit register for signal <h>.
+    Found 10-bit register for signal <f>.
+    Found 10-bit register for signal <g>.
+    Found 3-bit register for signal <state>.
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 8                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (negative)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Power Up State     | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 10-bit adder for signal <h[9]_f[9]_add_4_OUT> created at line 88.
+    Found 10-bit adder for signal <f[9]_g[9]_add_5_OUT> created at line 89.
+    Found 10-bit adder for signal <g[9]_GND_8_o_add_6_OUT> created at line 90.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  30 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <babbage> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port Read Only RAM                    : 1
+ 4x5-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 16
+ 10-bit adder                                          : 3
+ 32-bit adder                                          : 1
+ 4-bit adder                                           : 12
+# Registers                                            : 5
+ 10-bit register                                       : 3
+ 32-bit register                                       : 1
+ 5-bit register                                        : 1
+# Comparators                                          : 12
+ 3-bit comparator lessequal                            : 3
+ 4-bit comparator lessequal                            : 9
+# Multiplexers                                         : 16
+ 10-bit 2-to-1 multiplexer                             : 3
+ 4-bit 2-to-1 multiplexer                              : 12
+ 4-bit 4-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <BCD2Hex>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_hex> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <bcd>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <hex>           |          |
+    -----------------------------------------------------------------------
+Unit <BCD2Hex> synthesized (advanced).
+
+Synthesizing (advanced) Unit <StateMachine>.
+INFO:Xst:3231 - The small RAM <Mram__n0012> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 5-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <state_dsel<1:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <StateMachine> synthesized (advanced).
+
+Synthesizing (advanced) Unit <babbage>.
+The following registers are absorbed into accumulator <h>: 1 register on signal <h>.
+The following registers are absorbed into accumulator <f>: 1 register on signal <f>.
+Unit <babbage> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clkdivider>.
+The following registers are absorbed into counter <status>: 1 register on signal <status>.
+Unit <clkdivider> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port distributed Read Only RAM        : 1
+ 4x5-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 13
+ 10-bit adder                                          : 1
+ 4-bit adder                                           : 12
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Accumulators                                         : 2
+ 10-bit up loadable accumulator                        : 2
+# Registers                                            : 15
+ Flip-Flops                                            : 15
+# Comparators                                          : 12
+ 3-bit comparator lessequal                            : 3
+ 4-bit comparator lessequal                            : 9
+# Multiplexers                                         : 14
+ 10-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 12
+ 4-bit 4-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u6/FSM_1> on signal <state[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 010
+ 011   | 011
+ 100   | 100
+ 101   | 101
+ 110   | 110
+-------------------
+WARNING:Xst:1293 - FF/Latch <g_0> has a constant value of 0 in block <babbage>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <u5/status_19> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u5/status_20> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u5/status_21> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u5/status_22> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u5/status_23> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u5/status_24> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u5/status_25> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u5/status_26> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u5/status_27> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u5/status_28> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u5/status_29> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u5/status_30> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u5/status_31> of sequential type is unconnected in block <top>.
+
+Optimizing unit <top> ...
+
+Optimizing unit <babbage> ...
+
+Optimizing unit <bin2BCD> ...
+INFO:Xst:2261 - The FF/Latch <u6/state_FSM_FFd1> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <u6/f_0> 
+INFO:Xst:2261 - The FF/Latch <u6/h_0> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <u6/g_1> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 3.
+FlipFlop u6/state_FSM_FFd1 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 56
+ Flip-Flops                                            : 56
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 211
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 18
+#      LUT2                        : 27
+#      LUT3                        : 26
+#      LUT4                        : 10
+#      LUT5                        : 24
+#      LUT6                        : 26
+#      MUXCY                       : 36
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 38
+# FlipFlops/Latches                : 56
+#      FD                          : 24
+#      FDC                         : 5
+#      FDCE                        : 27
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 13
+#      IBUF                        : 3
+#      OBUF                        : 10
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9csg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              56  out of  11440     0%  
+ Number of Slice LUTs:                  134  out of   5720     2%  
+    Number used as Logic:               134  out of   5720     2%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    135
+   Number with an unused Flip Flop:      79  out of    135    58%  
+   Number with an unused LUT:             1  out of    135     0%  
+   Number of fully used LUT-FF pairs:    55  out of    135    40%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of    200     7%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+u5/status_18                       | BUFG                   | 37    |
+clk                                | BUFGP                  | 19    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 3.291ns (Maximum Frequency: 303.859MHz)
+   Minimum input arrival time before clock: 4.242ns
+   Maximum output required time after clock: 17.473ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'u5/status_18'
+  Clock period: 3.291ns (frequency: 303.859MHz)
+  Total number of paths / destination ports: 656 / 64
+-------------------------------------------------------------------------
+Delay:               3.291ns (Levels of Logic = 1)
+  Source:            u6/state_FSM_FFd2 (FF)
+  Destination:       u6/h_9 (FF)
+  Source Clock:      u5/status_18 rising
+  Destination Clock: u5/status_18 rising
+
+  Data Path: u6/state_FSM_FFd2 to u6/h_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              9   0.525   0.976  u6/state_FSM_FFd2 (u6/state_FSM_FFd2)
+     LUT3:I2->O           18   0.254   1.234  u6/_n0070_inv1 (u6/_n0070_inv)
+     FDCE:CE                   0.302          u6/g_2
+    ----------------------------------------
+    Total                      3.291ns (1.081ns logic, 2.210ns route)
+                                       (32.8% logic, 67.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.351ns (frequency: 425.306MHz)
+  Total number of paths / destination ports: 190 / 19
+-------------------------------------------------------------------------
+Delay:               2.351ns (Levels of Logic = 20)
+  Source:            u5/status_0 (FF)
+  Destination:       u5/status_18 (FF)
+  Source Clock:      clk falling
+  Destination Clock: clk falling
+
+  Data Path: u5/status_0 to u5/status_18
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.525   0.681  u5/status_0 (u5/status_0)
+     INV:I->O              1   0.255   0.000  u5/Mcount_status_lut<0>_INV_0 (u5/Mcount_status_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  u5/Mcount_status_cy<0> (u5/Mcount_status_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Mcount_status_cy<1> (u5/Mcount_status_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Mcount_status_cy<2> (u5/Mcount_status_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Mcount_status_cy<3> (u5/Mcount_status_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Mcount_status_cy<4> (u5/Mcount_status_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Mcount_status_cy<5> (u5/Mcount_status_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Mcount_status_cy<6> (u5/Mcount_status_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Mcount_status_cy<7> (u5/Mcount_status_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Mcount_status_cy<8> (u5/Mcount_status_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Mcount_status_cy<9> (u5/Mcount_status_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Mcount_status_cy<10> (u5/Mcount_status_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Mcount_status_cy<11> (u5/Mcount_status_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Mcount_status_cy<12> (u5/Mcount_status_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Mcount_status_cy<13> (u5/Mcount_status_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Mcount_status_cy<14> (u5/Mcount_status_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Mcount_status_cy<15> (u5/Mcount_status_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Mcount_status_cy<16> (u5/Mcount_status_cy<16>)
+     MUXCY:CI->O           0   0.023   0.000  u5/Mcount_status_cy<17> (u5/Mcount_status_cy<17>)
+     XORCY:CI->O           1   0.206   0.000  u5/Mcount_status_xor<18> (Result<18>)
+     FD:D                      0.074          u5/status_18
+    ----------------------------------------
+    Total                      2.351ns (1.670ns logic, 0.681ns route)
+                                       (71.0% logic, 29.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'u5/status_18'
+  Total number of paths / destination ports: 36 / 34
+-------------------------------------------------------------------------
+Offset:              4.242ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       u6/h_9 (FF)
+  Destination Clock: u5/status_18 rising
+
+  Data Path: rst to u6/h_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  rst_IBUF (rst_IBUF)
+     INV:I->O             32   0.255   1.519  u6/rst_inv1_INV_0 (u6/rst_inv)
+     FDCE:CLR                  0.459          u6/g_2
+    ----------------------------------------
+    Total                      4.242ns (2.042ns logic, 2.200ns route)
+                                       (48.1% logic, 51.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'u5/status_18'
+  Total number of paths / destination ports: 27128 / 10
+-------------------------------------------------------------------------
+Offset:              17.473ns (Levels of Logic = 10)
+  Source:            u6/h_8 (FF)
+  Destination:       hex<6> (PAD)
+  Source Clock:      u5/status_18 rising
+
+  Data Path: u6/h_8 to hex<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            13   0.525   1.528  u6/h_8 (u6/h_8)
+     LUT5:I0->O            6   0.254   1.306  u0/Mmux_GND_2_o_GND_2_o_mux_8_OUT31 (u0/Madd_GND_2_o_GND_2_o_add_13_OUT_lut<3>)
+     LUT5:I0->O            6   0.254   1.331  u0/Mmux_GND_2_o_GND_2_o_mux_14_OUT21 (u0/Madd_GND_2_o_GND_2_o_add_19_OUT_lut<2>)
+     LUT6:I0->O            9   0.254   1.252  u0/GND_2_o_GND_2_o_LessThan_19_o (u0/GND_2_o_GND_2_o_LessThan_19_o)
+     LUT6:I2->O           10   0.254   1.438  u0/Mmux_GND_2_o_GND_2_o_mux_20_OUT42 (u0/Madd_GND_2_o_GND_2_o_add_22_OUT_cy<0>)
+     LUT6:I1->O            1   0.254   0.682  u0/Mmux_GND_2_o_GND_2_o_mux_23_OUT32 (u0/Mmux_GND_2_o_GND_2_o_mux_23_OUT31)
+     LUT6:I5->O            4   0.254   1.234  u0/Mmux_GND_2_o_GND_2_o_mux_23_OUT33 (u0/Madd_GND_2_o_GND_2_o_add_31_OUT_lut<3>)
+     LUT5:I0->O            1   0.254   1.112  u1/Mmux_x46 (u1/Mmux_x45)
+     LUT6:I1->O            7   0.254   1.186  u1/Mmux_x47 (outmux<3>)
+     LUT4:I0->O            1   0.254   0.681  u2/Mram_hex51 (hex_5_OBUF)
+     OBUF:I->O                 2.912          hex_5_OBUF (hex<5>)
+    ----------------------------------------
+    Total                     17.473ns (5.723ns logic, 11.750ns route)
+                                       (32.8% logic, 67.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.351|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock u5/status_18
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+u5/status_18   |    3.291|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.15 secs
+ 
+--> 
+
+Total memory usage is 4472152 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   14 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

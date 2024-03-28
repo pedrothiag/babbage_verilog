@@ -1,0 +1,8 @@
+verilog work "StateMachine.v"
+verilog work "Mux4x1.v"
+verilog work "CombSel.v"
+verilog work "clkdivider.v"
+verilog work "bin2BCD.v"
+verilog work "BCD2Hex.v"
+verilog work "babbage.v"
+verilog work "top.v"
